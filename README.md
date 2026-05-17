@@ -23,3 +23,4 @@ Python code for calculating and visualizing the minimum-energy wave vector \( q_
 
 ```bash
 pip install numpy matplotlib# Jmin-phase-diagram
+# Jmin-phase-diagram
