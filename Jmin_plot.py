@@ -90,7 +90,7 @@ def calculate_minimum_maps(J2_values, J3_values, q_values):
     return energy_min_map, H_min_map, K_min_map, L_min_map
 
 
-def make_q_min_rgb_map(H_min_map, K_min_map, L_min_map, map_correction="True"):
+def make_q_min_rgb_map(H_min_map, K_min_map, L_min_map, map_correction="False"):
     """
     Convert q_min = (H, K, L) into an RGB image.
 
@@ -169,7 +169,7 @@ E_min_map, H_min_map, K_min_map, L_min_map = calculate_minimum_maps(
     q_values,
 )
 
-rgb_map = make_q_min_rgb_map(H_min_map, K_min_map, L_min_map, map_correction="True")
+rgb_map = make_q_min_rgb_map(H_min_map, K_min_map, L_min_map, map_correction="False")
 
 plot_q_min_map(rgb_map, "q_min_rgb_map.pdf")
 plot_energy_min_map(E_min_map, "J_min_map.pdf")
